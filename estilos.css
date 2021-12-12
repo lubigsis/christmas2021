@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    padding: 0;
+   
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+
+.logotipo{
+    font-family: 'Corinthia', cursive;
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-left: 30px;
+    color: #ce0714;
+    padding-top: 15px;
+}
+
+.logo{
+    font-size: 14px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    letter-spacing: 3px;
+    padding-bottom: 8px;
+    margin-left: 100px;
+    color: #000000;
+}
+
+header nav a{
+    color: #000000;
+    text-decoration: none;
+    margin-right: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a:hover{
+    color: #41992F;
+    text-decoration: underline;
+}
+
+.principal{
+    font-size: 14px;
+    min-height: 46.42em;
+    background: url(portada.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
