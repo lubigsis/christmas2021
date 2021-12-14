@@ -6,24 +6,24 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
-header{
-    padding: 0;
-   
-}
 
-header .contenedor{
+header .contenedor .contenedor-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
+  }
 
-.contenedor{
-    width: 90%;
-    margin: auto;
+header .contenedor{
+    width: 100%;
+    height: 100vh;
+    background-image: url(portada3.png);
+    background-size: cover;
+    background-position: center center;
+    
+    
 }
 
 
@@ -32,7 +32,7 @@ header .contenedor{
     font-size: 50px;
     letter-spacing: 4px;
     margin-left: 30px;
-    color: #ce0714;
+    color: #fff;
     padding-top: 15px;
 }
 
@@ -42,11 +42,11 @@ header .contenedor{
     letter-spacing: 3px;
     padding-bottom: 8px;
     margin-left: 100px;
-    color: #000000;
+    color: #fff;
 }
 
 header nav a{
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     margin-right: 35px;
     font-family: 'Roboto', sans-serif;
@@ -57,11 +57,204 @@ header nav a:hover{
     text-decoration: underline;
 }
 
-.principal{
-    font-size: 14px;
-    min-height: 46.42em;
-    background: url(portada.jpg);
-    background-position: center center;
-    background-size: cover;
+
+/*----------------------------------------------------------------------------------*/
+.nariz-roja{
+    width: 5px;
+    height: 4px;
+    background-color: red;
+    border-radius: 40px 30px 40px 30px;
+    position: absolute;
+    left: 543px;
+    top: 133px;
+    animation: brillo 6s infinite alternate;
 }
 
+@keyframes brillo{
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        box-shadow: 9px 9px 9px #fff,
+                    3px 3px 5px #fff,
+                    -5px -5px 15px #fff,
+                    -9px -9px 10px #fff;
+    }
+    10%, 50%{
+        box-shadow: none;
+    }
+}
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+.bolita-roja1{
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    left: 89px;
+    top: 293px;
+    animation: rojo-verde 4s infinite linear;
+}
+
+.bolita-roja2{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 210px;
+    top: 323px;
+    animation: rojo-verde 4s infinite linear;
+}
+
+.bolita-roja3{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 60px;
+    top: 373px;
+    animation: rojo-verde 4s infinite linear;
+}
+
+.bolita-roja4{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 160px;
+    top: 383px;
+    animation: rojo-verde 3s infinite linear;
+}
+
+.bolita-roja5{
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 170px;
+    top: 193px;
+    animation: rojo-verde 3s infinite linear;
+}
+
+.bolita-roja6{
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 180px;
+    top: 238px;
+    animation: rojo-verde 4s infinite linear;
+}
+
+.bolita-roja7{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 150px;
+    top: 263px;
+    animation: rojo-verde 3s infinite linear;
+}
+
+/*--------------------------------------------------------------------*/
+.bolita-amarilla1{
+    width: 9px;
+    height: 9px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 80px;
+    top: 393px;
+    animation: amarillo-azul 2s infinite linear;
+}
+
+.bolita-amarilla2{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    top: 200px;
+    animation: amarillo-azul 5s infinite linear;
+}
+
+.bolita-amarilla3{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 160px;
+    top: 270px;
+    animation: amarillo-azul 2s infinite linear;
+}
+
+.bolita-amarilla4{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 210px;
+    top: 360px;
+    animation: amarillo-azul 5s infinite linear;
+}
+
+.bolita-amarilla5{
+    width: 7px;
+    height: 7px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 110px;
+    top: 300px;
+    animation: amarillo-azul 2s infinite linear;
+}
+
+.bolita-amarilla6{
+    width: 9px;
+    height: 9px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    left: 110px;
+    top: 115px;
+    animation: amarillo-azul 3s infinite linear;
+}
+
+/*---------------------animaciones bolitas árbol------------------------------------*/
+
+@keyframes rojo-verde{
+    0%{
+        background: red;
+    }
+    
+    50%{
+        background: rgb(17, 173, 17);
+    }
+
+   
+    100%{
+        background: red;
+    }
+}
+
+@keyframes amarillo-azul{
+    0%{
+        background: yellow;
+    }
+    50%{
+        background: blue;
+    }
+    100%{
+        background: lightblue;
+    }
+}
