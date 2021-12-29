@@ -258,3 +258,264 @@ header nav a:hover{
         background: lightblue;
     }
 }
+
+/*-------------------------------------------------Deer form--------------------------------*/
+
+.body-wish{
+    position: absolute; /*depende del tamaño del navegador, de ninguna otra etiquet html*/
+    width: 100%; /*tendrá un backgroud ancho y alto dependiendo del navegador*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.sendAWish{
+    font-family: 'Corinthia', cursive;
+    letter-spacing: 4px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.sendAWish img{
+    margin-top: 10px;
+    height: 200px;
+    z-index: 10;
+}
+
+.deer-form{
+    width: 700px;
+    position: absolute;
+    background-image: radial-gradient(rgb(88, 5, 5), #FF0000);
+    border: 4px dashed #14a314;
+    border-radius: 10px;
+    padding: 0px 40px;
+    top: 210px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.deer-form textarea{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 600px;
+    
+}
+
+.deer-form label, input{
+    display: block;
+    margin: 10px 0px;
+}
+
+.deer-form .rellenar{
+    height: 40px;
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.deer-form .deer-send{
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #18771a;
+    color: #fff;
+    letter-spacing: 3px;
+   
+}
+
+
+.deer-form .deer-send:hover{
+    background-color: rgb(20, 163, 20);
+    color: #FF0000;
+    text-transform: uppercase;
+}
+
+.nariz-roja-2{
+    width: 38px;
+    height: 27px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    position: absolute;
+    left: 621px;
+    top: 122px;
+    animation: brillo2 4s infinite alternate;
+}
+
+@keyframes brillo2{
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        box-shadow: 9px 9px 9px #fff,
+                    9px 9px 9px #FF0000,
+                    -9px -9px 15px #fff,
+                    -9px -9px 10px #FF0000;
+    }
+    10%, 50%{
+        box-shadow: none;
+    }
+}
+
+.santa-trineo{
+    width: 110px;
+    height: 90px;
+    background-image: url(santa-trineo.png);
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: trineo 36s linear infinite;
+    z-index: 1;
+  
+}
+
+@keyframes trineo{
+    0%{
+        left: 0;
+        opacity: 0;
+    }
+    2%{
+        left: 2%;
+        opacity: .9;
+    }
+    10%{
+        left: 10%;
+       opacity: .9;
+    }
+    20%{
+        left: 20%;
+        opacity: .9;
+    }
+    30%{
+        left: 30%;
+        opacity: .9;
+    }
+    37%{
+        left: 36%;
+        opacity: 0;
+    }
+    40%{
+        left: 40%;
+        opacity: 0;
+    }
+    50%{
+        left: 50%;
+        opacity: 0;
+    }
+    55%{
+        left: 55%;
+        opacity: 0;
+    }
+    60%{
+        left: 60%;
+        opacity: .9;
+    }
+    70%{
+        left: 70%;
+        opacity: .9;
+    }
+    80%{
+        left: 80%;
+        opacity: .9;
+    }
+    90%{
+        left: 90%;
+        opacity: .0;
+    }
+    100%{
+        left: 92%;
+        opacity: 0;
+    }
+}
+
+/*..........................................................GRINCH.......................*/
+.body-complaint{
+    position: absolute; /*depende del tamaño del navegador, de ninguna otra etiquet html*/
+    width: 100%; /*tendrá un backgroud ancho y alto dependiendo del navegador*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.sendAComplaint{
+    font-family: 'Corinthia', cursive;
+    letter-spacing: 5px;
+    color: #49FF00;
+    font-size: 33px;
+}
+
+.sendAComplaint img{
+    margin-top: 3px;
+    height: 238px;
+    z-index: 10;
+}
+
+.grinch-form{
+    width: 700px;
+    position: absolute;
+    background-color: #000000;
+    border: 5px solid #49FF00;
+    border-radius: 5px;
+    padding: 0px 40px;
+    top: 210px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.grinch-form textarea{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 600px;
+    
+}
+
+.grinch-form label, input{
+    display: block;
+    margin: 10px 0px;
+}
+
+.grinch-form .rellenar{
+    height: 40px;
+    border: 2px solid #49FF00;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.grinch-form .grinch-send{
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #49FF00;
+    color: #000000;
+    letter-spacing: 3px;
+   
+}
+
+
+.grinch-form .grinch-send:hover{
+    background-color: rgb(20, 163, 20);
+    color: #000000;
+    text-transform: uppercase;
+}
